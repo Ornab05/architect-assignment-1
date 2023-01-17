@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Site</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4087/4087930.png" type="image/x-icon" >
+    <style>
+.button-primary{
+    background-color: crimson;
+    height: 40px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+/*  design All */
+body{
+    background-color:#FFF8F3;
+}
+.site{
+    
+    border: none;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin: 100px 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+    border-radius: 10px;
+
+    }
+.inside-site{
+    margin:10px;
+}
+#email{
+    margin-bottom: 30px;
+    border: 3px solid rgb(red, green, blue);
+    border-radius: 8px;
+    height: 40px;
+    width: 200px;
+}
+#Review{
+    margin-bottom: 30px;
+    border: 2px solid rgba(red, green, blue, alpha);
+    border-radius: 8px;
+    width: 400px;
+}
+.fieldset{
+    width: 400px;
+    border: 2px solid rgba(red, green, blue, alpha);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+#home-nav{
+    position: absolute;top: 0;right: 0;
+    margin: 10px 10px;
+    background-color: orange;
+}
+.button-primary a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width:577px){
+    .site{
+        width: 95%;
+        margin-left: 10px;
+
+    }
+    .fieldset{
+       width: 90%;
+    }
+    #Review{
+        width: 90%;
+    }
+}
+</style>
+</head>
+<body>
+    <button class="button-primary" id="home-nav"><a href="index.html">Home</a></button>
+    <form class="site">
+        <div class="inside-site">
+        <label for="email">Your Email:
+            <input type="email" name="" id="email" placeholder="Email"></label>
+          <br>
+       
+        <textarea name="" id="Review" cols="30" rows="10" placeholder="Write Us A Review"></textarea>
+    
+    <br>
+    <fieldset class="fieldset">
+    <legend>How Was Our WebSite design </legend>
+    <select>
+        <option value="any">...</option>
+        <option value="any">Great</option>
+        <option value="any">Good</option>
+        <option value="any">Bad</option>
+        <option value="any">Boring</option>
+        <option value="any">Extremely Disappoited</option>
+    </select>
+</fieldset>
+
+    <input class="button-primary" type="submit" value="submit">
+</div> 
+
+</form>
+    
+</body>
+</html>
